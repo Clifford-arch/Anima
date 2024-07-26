@@ -1,13 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./App";
-import "tailwindcss/tailwind.css";
-
-console.log("hi");
+// index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import 'tailwindcss/tailwind.css';
+import DndProvider from './components/DndProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DndProvider>
+      <App />
+    </DndProvider>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
